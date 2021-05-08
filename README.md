@@ -7,7 +7,7 @@ Assuming that you have <a href="https://nodejs.org/en/download/package-manager/"
 
 Site in under a minute using terminal:
 
-1. Build your node app: `npm init`. Note: use "index.js" for your app.
+1. Build your node app: `npm init`. Note: use "index.js" for your entry point, if ya want the rest of the scripts to work.
 2. Create your app file `printf '%s\n' 'const Neice = require("niece");' 'new Neice();' > index.js`
 3. Install nodemon and npm-add-script to help with development: `npm install -g nodemon npm-add-script`
 4. Add your dev script `npmAddScript -k dev -v "nodemon index.js"`
