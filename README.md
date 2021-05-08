@@ -3,7 +3,7 @@
 
 ### Install
 
-Assuming that you have installed node.js and no
+Assuming that you have <a href="https://nodejs.org/en/download/package-manager/>"installed node.js</a>.
 
 Site in under a minute using terminal:
 
