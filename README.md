@@ -22,4 +22,14 @@ Few notes:
  - Type control+z to end the sever
  - Run `kill -9 $(lsof -t -i:4430)` to stop listening on port 4430
 
-<input type="text"></input>
+### Incase you want to install everything at defaut, in one script, just run this:
+```
+npm init -f
+printf '%s\n' 'const Neice = require("niece");' 'new Neice();' > index.js
+npm install -g nodemon npm-add-script
+npmAddScript -k dev -v "nodemon index.js"
+npm install niece
+open -na "Firefox" --args --new-window "javascript:setTimeout(()=>window.location.href='http://localhost:4430', 4000)"
+npm run dev
+# done
+```
