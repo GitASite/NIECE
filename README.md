@@ -22,7 +22,7 @@ Few notes:
  - Type control+z to end the sever
  - Run `kill -9 $(lsof -t -i:4430)` to stop listening on port 4430
 
-### Intall in a singe sript!
+### Intall in a single sript!
 ```
 npm init -f
 printf '%s\n' 'const Neice = require("niece");' 'new Neice();' > index.js
