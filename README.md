@@ -22,7 +22,7 @@ Few notes:
  - Type control+z to end the sever
  - Run `kill -9 $(lsof -t -i:4430)` to stop listening on port 4430
 
-### Incase you want to install everything at defaut, in one script, just run this:
+### Intall in a singe sript!
 ```
 npm init -f
 printf '%s\n' 'const Neice = require("niece");' 'new Neice();' > index.js
