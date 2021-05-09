@@ -62,3 +62,34 @@ npm install
 npm run dev
 # done
 ```
+
+
+## Running Apache OpenSSL on your server as well? No problem!
+On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's port:
+
+#### Non-Secure http:// (port 80)
+
+```<VirtualHost 104.130.24.68:80>
+  ServerName niece.box.biz
+  # Set up the proxy both ways
+  SSLProxyEngine On
+  ProxyPass / http://localhost:4430/
+  ProxyPassReverse / http://localhost:4430/
+  ProxyPreserveHost On
+</VirtualHost>```
+
+#### Secure https:// (port 443)
+
+```<VirtualHost 104.130.24.68:443>
+  ServerName niece.box.biz
+  # Set up the proxy both ways
+  SSLProxyEngine On
+  ProxyPass / http://localhost:4430/
+  ProxyPassReverse / http://localhost:4430/
+  ProxyPreserveHost On
+  # Turn on SSL
+  SSLEngine on
+  SSLCertificateFile /etc/ssl/2/STAR_box_biz.crt
+  SSLCertificateKeyFile /etc/ssl/2/box_biz.key
+  SSLCertificateChainFile /etc/ssl/2/My_CA_Bundle.ca-bundle
+</VirtualHost>```
