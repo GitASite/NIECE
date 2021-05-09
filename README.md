@@ -1,6 +1,15 @@
 # NIECE
 ## Node.js Inline-Edited-Content & Express
 
+### What's NIECE?
+NIECE is full-stack CMS built entirely within a single npm package. It doen't really have an admin pannel as everyhitng is ediable inline. The structure is built very similarly to Drupal 7, and does almost as much. It has a lot for it's size:
+ - Bootstrap theme
+ - Written entirely in Javascript (Node.js).
+ - User system with roles, permissions, and email verification.
+ - Media upload system.
+ - Extendable using npm modules with the prefix name of "niece_"
+ - and more...
+
 ### Install
 
 Assuming that you have <a href="https://nodejs.org/en/download/package-manager/">installed node.js</a>.
