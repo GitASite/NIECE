@@ -18,7 +18,7 @@ Site in under a minute using terminal:
 ### Thats it!
 
 Few notes:
-
+ - To restart just run `rs`
  - Type control+z to end the sever
  - Run `kill -9 $(lsof -t -i:4430)` to stop listening on port 4430
 
