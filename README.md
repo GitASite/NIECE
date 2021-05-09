@@ -49,7 +49,7 @@ npm run dev
 
 Assuming you have git and node.js installed.
 
-Git a base app `git clone https://github.com/BOXNYC/niece.git`
+Git a base app `git clone https://github.com/BOXNYC/NIECE.git`
 Go to it's directory `cd niece`
 Install it via npm `npm install`
 Run it `npm run dev`
