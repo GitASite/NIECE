@@ -33,7 +33,7 @@ Few notes:
  - Type control+z to end the sever
  - Run `kill -9 $(lsof -t -i:4430)` to stop listening on port 4430
 
-#### Install in a single sript!
+#### Install in a single script!
 ```
 npm init -f
 printf '%s\n' 'const Neice = require("niece");' 'new Neice();' > index.js
@@ -54,7 +54,7 @@ Go to it's directory `cd niece`
 Install it via npm `npm install`
 Run it `npm run dev`
 
-#### Install in a single sript!
+#### Install in a single script!
 ```
 git clone https://github.com/BOXNYC/niece.git
 cd niece
