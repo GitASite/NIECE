@@ -10,6 +10,9 @@ NIECE is full-stack CMS built entirely within a single npm package. It doen't re
  - Extendable using npm modules with the prefix name of "niece_"
  - and more...
 
+You can see it in action here: http://niece.box.biz/ in fact that site is the default site the module ships with.
+
+
 ## Install
 
 Assuming that you have <a href="https://nodejs.org/en/download/package-manager/">installed node.js</a>.
@@ -69,18 +72,21 @@ On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's 
 
 #### Non-Secure http:// (port 80)
 
-```<VirtualHost 104.130.24.68:80>
+```
+<VirtualHost 104.130.24.68:80>
   ServerName niece.box.biz
   # Set up the proxy both ways
   SSLProxyEngine On
   ProxyPass / http://localhost:4430/
   ProxyPassReverse / http://localhost:4430/
   ProxyPreserveHost On
-</VirtualHost>```
+</VirtualHost>
+```
 
 #### Secure https:// (port 443)
 
-```<VirtualHost 104.130.24.68:443>
+```
+<VirtualHost 104.130.24.68:443>
   ServerName niece.box.biz
   # Set up the proxy both ways
   SSLProxyEngine On
@@ -92,4 +98,5 @@ On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's 
   SSLCertificateFile /etc/ssl/2/STAR_box_biz.crt
   SSLCertificateKeyFile /etc/ssl/2/box_biz.key
   SSLCertificateChainFile /etc/ssl/2/My_CA_Bundle.ca-bundle
-</VirtualHost>```
+</VirtualHost>
+```
