@@ -1,4 +1,9 @@
+<br>
+<p align="center">
+<a href="https://niece.box.biz/images/niece/olive.svg" />
 # NIECE
+</p>
+
 #### Node.js Inline-Edited-Content & Express
 
 ### What's NIECE?
