@@ -2,7 +2,7 @@
 <p align="center" style="margin-bottom: -40px;">
 <a href="https://niece.box.biz">
 <img src="https://niece.box.biz/images/niece/olive.svg" /></a></p>
-<p align="center"><strong>NIECE</strong></p>
+<h2 align="center"><strong>NIECE</strong></h2>
 <p align="center"> Node.js Inline-Edited-Content & Express</p>
 
 ### What's NIECE?
