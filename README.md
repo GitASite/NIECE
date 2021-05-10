@@ -6,7 +6,8 @@
   </a>
 </p>
 <h3 align="center">NIECE</h3>
-<p align="center"> Node.js Inline-Edited-Content & Express</p>
+<p align="center"> Node.js Inline-Edited-Content & 
+Express</p>
 
 <br><br>
 
@@ -35,8 +36,8 @@ You can see it in action here: http://niece.box.biz/ in fact that site is the de
 
 Assuming that you have <a href="https://nodejs.org/en/download/package-manager/">installed node.js</a>.
 
-### Using just NPM
-
+<details>
+  <summary>Using just NPM</summary>
 Site in under a minute using terminal:
 
 1. Build your node app: `npm init`. _Note: use "index.js" for your entry point, if ya want the rest of the scripts to work._
@@ -65,6 +66,7 @@ open -na "Firefox" --args --new-window "javascript:setTimeout(()=>window.locatio
 npm run dev
 # done
 ```
+</details>
 
 ### Using Github and NPM
 
