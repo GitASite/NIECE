@@ -1,7 +1,8 @@
 <br>
 <p align="center">
-<a href="https://niece.box.biz/images/niece/olive.svg" />
-# NIECE
+<a href="https://niece.box.biz">
+<img src="https://niece.box.biz/images/niece/olive.svg" /></a>
+<h1>NIECE</h1>
 </p>
 
 #### Node.js Inline-Edited-Content & Express
