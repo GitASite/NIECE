@@ -48,7 +48,7 @@ Site in under a minute using terminal:
 7. Run your app: `npm run dev` which will build the site and listen at port 4430. Your site will be http://localhost:4430/
 8. Go to http://localhost:4430/user/register and create your admin account.
 
-#### Thats it!
+#### That's it!
 
 Few notes:
  - To restart just run `rs`
@@ -68,7 +68,8 @@ npm run dev
 ```
 </details>
 
-### Using Github and NPM
+<details>
+  <summary>Using Github and NPM</summary>
 
 Assuming you have git and node.js installed.
 
@@ -85,9 +86,14 @@ npm install
 npm run dev
 # done
 ```
+</details>
+
+<br>
 
 
-## Running Apache OpenSSL on your server as well? No problem!
+## Run on a webserver 
+<details>
+  <summary>Apache OpenSSL</summary>
 On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's port:
 
 #### Non-Secure http:// (port 80)
@@ -120,3 +126,4 @@ On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's 
   SSLCertificateChainFile /etc/ssl/2/My_CA_Bundle.ca-bundle
 </VirtualHost>
 ```
+</details>
