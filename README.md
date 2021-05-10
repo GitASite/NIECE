@@ -1,5 +1,5 @@
 <br>
-<p align="center">
+<p align="center" style="margin-bottom: -40px;">
 <a href="https://niece.box.biz">
 <img src="https://niece.box.biz/images/niece/olive.svg" /></a></p>
 <p align="center"><strong>NIECE</strong></p>
