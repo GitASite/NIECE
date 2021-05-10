@@ -1,12 +1,26 @@
 <br>
-<p align="center" style="margin-bottom: -40px;">
-<a href="https://niece.box.biz">
-<img src="https://niece.box.biz/images/niece/olive.svg" /></a></p>
-<h2 align="center"><strong>NIECE</strong></h2>
+
+<p align="center">
+  <a href="https://niece.box.biz">
+    <img src="https://niece.box.biz/images/niece/olive.svg" width="128" />
+  </a>
+</p>
+<h3 align="center">NIECE</h3>
 <p align="center"> Node.js Inline-Edited-Content & Express</p>
 
+<br><br>
+
 ### What's NIECE?
-NIECE is full-stack CMS built entirely within a single npm package. It doen't really have an admin pannel as everyhitng is ediable inline. The structure is built very similarly to Drupal CMS, and does almost as much. It has a lot for it's size:
+<p>NIECE is full-stack CMS built entirely within a 
+single npm module package. It's unique because it 
+doen't really have an admin panel and all content is 
+editable inline on the front-end. This makes it an 
+[iCMS or an adminless CMS](#iCMS).</p>
+
+<p>The back-end structure is built very similarly to 
+Drupal CMS, and does just about as much.</p>
+
+### Features
  - Bootstrap theme
  - Written entirely in Javascript (Node.js).
  - User system with roles, permissions, and email verification.
