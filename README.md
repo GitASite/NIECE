@@ -31,6 +31,7 @@ Drupal CMS, and does just about as much.</p>
 
 You can see it in action here: http://niece.box.biz/ in fact that site is the default site the module ships with.
 
+<br>
 
 ## Install
 
@@ -67,6 +68,8 @@ npm run dev
 # done
 ```
 </details>
+
+<br>
 
 <details>
   <summary>Using Github and NPM</summary>
