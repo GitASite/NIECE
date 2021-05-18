@@ -5,7 +5,7 @@
     <img src="https://niece.box.biz/images/niece/olive.svg" width="128" />
   </a>
 </p>
-<h2 align="center">NIECE Profiles</h2>
+<h3 align="center">NIECE Profiles</h3>
 <p align="center"> Quick-install Installation Profiles.</p>
 
 <br><br><hr><br><br>
