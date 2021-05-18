@@ -15,7 +15,7 @@
 
 
 ### Profiles
- - <details><summary>Basic</summary>Bare-bones installation with the settings set to default. Usefull for quickly building and configuing a static site.<br>[Install basic profile](#basic)</details>
+ - Basic: Bare-bones installation with the settings set to default. Usefull for quickly building and configuing a static site. [Install basic profile](#basic)
  - More coming soon...
 
 #### Basic
