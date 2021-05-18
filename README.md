@@ -8,7 +8,7 @@
 <h3 align="center">NIECE Profiles</h3>
 <p align="center"> This branch is for installation profiles.</p>
 
-<br><br><p align="center">~ • • • ~</p><br><br>
+<br><br><p align="center">~ • **•** • ~</p><br><br>
 
 ### What's NIECE Profiles?
 <p>A NIECE profile is used to quickly build a NIECE site with some predefined settings, installed using git.</p>
