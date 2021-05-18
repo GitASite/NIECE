@@ -19,12 +19,9 @@
  - More coming soon...
 
 ####Basic
-<details>
-  <legend>Install</legend>
-  ```ssh
+```ssh
 git clone -b profiles https://github.com/BOXNYC/NIECE/; cd NIECE/basic; npm install; npm run dev
 ```
-</details>
 
 <br>
 <br>
