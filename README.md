@@ -18,7 +18,21 @@
  - Basic: Bare-bones installation with the settings set to default. Usefull for quickly building and configuing a static site. [Install basic profile](#basic)
  - More coming soon...
 
-
-<details><legend>####Basic</legend>```ssh
+####Basic
+<details>
+  <legend>Install</legend>
+  ```ssh
 git clone -b profiles https://github.com/BOXNYC/NIECE/; cd NIECE/basic; npm install; npm run dev
-```</details>
+```
+</details>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
