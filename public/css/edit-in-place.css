@@ -1,0 +1,125 @@
+
+#save-edit-in-place {
+	position: fixed;
+	opacity: 0;
+	border-radius: 30px;
+	bottom: 15px;
+	right: 10px;
+	cursor: pointer;
+	pointer-events: none;
+	transition: opacity 1s;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+body.editable-in-place.edited-in-place #save-edit-in-place {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#path-edit-in-place {
+	position: fixed;
+	opacity: 0;
+	border-radius: 30px;
+	bottom: 15px;
+	right: 88px;
+	cursor: pointer;
+	pointer-events: none;
+	transition: opacity 1s;
+	background-color: white;
+	display: block;
+	padding: 6px 15px;
+	font-size: 1rem;
+	font-weight: 800;
+	margin: 0;
+}
+
+#path-edit-in-place input {
+	border: none;
+	margin-left: 5px;
+	width: 5rem;
+}
+
+body.editable-in-place.edited-in-place #path-edit-in-place {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#published-edit-in-place {
+	position: fixed;
+	bottom: 15px;
+	right: 351px;
+	z-index: 11;
+	margin: 0;
+	opacity: 0;
+	pointer-events: none;
+	display: block;
+	color: white;
+	font-size: 1rem;
+	font-weight: 800;
+	background-color: rgba(0,0,0,0.2);
+	padding: 5px 15px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+#published-edit-in-place select {
+	display: none;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+}
+
+body.editable-in-place.edited-in-place #published-edit-in-place {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+
+#menu-edit-in-place {
+	position: fixed;
+	bottom: 15px;
+	right: 252px;
+	z-index: 11;
+	margin: 0;
+	opacity: 0;
+	pointer-events: none;
+	display: block;
+	color: white;
+	font-size: 1rem;
+	font-weight: 800;
+	background-color: rgba(0,0,0,0.2);
+	padding: 5px 15px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+#menu-edit-in-place select {
+	display: none;
+	padding: 10px;
+	border: none;
+	border-radius: 8px;
+}
+
+body.editable-in-place.edited-in-place #menu-edit-in-place {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+#menu-checkbox:checked + select {
+  display: block;
+}
+
+
+body.editable-in-place > nav {
+  transition: opacity 1s;
+}
+
+body.editable-in-place.editing-in-place > nav {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/*.mce-edit-focus {
+  box-shadow: 0px 0px 200vh black,0px 0px 200vh black;
+}*/

@@ -1,0 +1,46 @@
+    
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">Edit : {{user.name}}</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="overlap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <form class="col-md-6" action="/user/edit" method="POST">
+            {{> messages}}
+            <label for="name">Name</label>
+            <input class="form-control mb-3" type="text" id="name" name="name" placeholder="Name" value="{{user.name}}" required autofocus>
+            <label for="email">Email</label>
+            <input class="form-control mb-3" type="email" id="email" name="email" placeholder="Email" value="{{user.email}}" required>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                ID
+                <span class="badge badge-info badge-pill">{{minus 1 user._id}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                UUID
+                <span class="badge">{{user.id}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Role
+                <span class="badge">{{user.role}}</span>
+              </li>{{#if usersRequireVerification}}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Verified
+                <span class="badge">{{#if user.verified}}Yes{{else}}No. <a class="link" href="/user/resend-verification">Send Verification Email</a>{{/if}}</span>
+              </li>{{/if}}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Joined
+                <span id="joined" class="badge">{{dateformat "mmmm d, yyyy" user.joined}}</span>
+              </li>
+            </ul>
+            <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Save Changes</button>
+            <a class="btn btn-warning btn-block" href="/user/update-password?token={{changePasswordToken}}">Change Password</a>
+          </form>
+        </div>
+      </div>
+    </section>

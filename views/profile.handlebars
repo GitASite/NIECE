@@ -1,0 +1,66 @@
+    
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">{{profile.name}}</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="overlap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            {{> messages}}
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                ID
+                <span class="badge badge-info badge-pill">{{minus 1 profile._id}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                UUID
+                <span class="badge">{{profile.id}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Name
+                <span class="badge">{{profile.name}}</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Role
+                <span class="badge">
+                  {{#if user}}
+                    {{#ifnoteq user.role "admin"}}{{profile.role}}{{/ifnoteq}}
+                    {{#ifeq user.role "admin"}}
+                      <form action="/users/{{minus 1 profile._id}}/update-role" method="POST">
+                        <div class="input-group">
+                          <select name="role" class="custom-select">
+                            <option value="admin" {{selectItemActive profile.role "admin"}}>Admin</option>
+                            <option value="editor" {{selectItemActive profile.role "editor"}}>Editor</option>
+                            <option value="publisher" {{selectItemActive profile.role "publisher"}}>Publisher</option>
+                            <option value="regular" {{selectItemActive profile.role "regular"}}>Regular</option>
+                          </select>
+                          <div class="input-group-append">
+                            <button type="submit" class="btn btn-outline-secondary"><i class="bi bi-check2"></i></button>
+                          </div>
+                        </div>
+                      </form>
+                    {{/ifeq}}
+                  {{else}}
+                    {{profile.role}}
+                  {{/if}}
+                </span>
+              </li>
+              {{#if usersRequireVerification}}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Verified
+                <span class="badge">{{#if profile.verified}}Yes{{else}}No{{/if}}</span>
+              </li>{{/if}}
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Joined
+                <span id="joined" class="badge">{{dateformat "mmmm d, yyyy" profile.joined}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>

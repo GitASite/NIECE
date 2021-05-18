@@ -1,0 +1,33 @@
+{
+  "name": "niece",
+  "version": "0.0.10",
+  "description": "Inline-Edited CMS in Node.js and Express.",
+  "main": "niece.js",
+  "author": "BOXNYC",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dateformat": "^4.5.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-flash": "^0.0.2",
+    "express-handlebars": "^5.3.0",
+    "express-session": "^1.17.1",
+    "fs": "*",
+    "get-routes": "^2.1.1",
+    "handlebars": "^4.7.7",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "nodemailer": "^6.5.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "pretti": "^2.0.1",
+    "tingodb": "^0.6.1",
+    "tinymce": "^5.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

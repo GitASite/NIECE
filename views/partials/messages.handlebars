@@ -1,0 +1,8 @@
+        {{#ifeval "Object.keys(arg).length" messages }}<div class="alerts p-3" onclick="this.parentNode.removeChild(this)">
+            {{#if messages.error }}
+            <div class="alert alert-danger" role="alert">{{messages.error}}</div>
+            {{/if}}
+            {{#if messages.info }}
+            <div class="alert alert-info" role="alert">{{messages.info}}</div>
+            {{/if}}
+        </div>{{/ifeval}}

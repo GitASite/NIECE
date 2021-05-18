@@ -1,0 +1,36 @@
+    
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">{{page.title}}</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="overlap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <form class="col-md-6" action="/user/login" method="POST">
+            <style>
+              [name="email"] {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                border-bottom: none;
+              }
+              [name="password"] {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+              }
+            </style>
+            {{> messages}}
+            <label class="sr-only" for="email">Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Email" required autofocus>
+            <label class="sr-only" for="password">Password</label>
+            <input class="form-control mb-3" type="password" id="password" name="password" placeholder="Password" required>
+            <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Login</button>
+            <a class="btn btn-info btn-block" href="/user/forgot-password">Forgot Password?</a>
+            <a class="btn btn-info btn-block" href="/user/register">Register</a>
+          </form>
+        </div>
+      </div>
+    </section>
