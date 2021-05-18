@@ -8,7 +8,7 @@
 <h1 align="center">NIECE Profiles</h1>
 <p align="center"> Quick-install Installation Profiles.</p>
 
-<br><br><p align="center">~ • **•** • ~</p><br><br>
+<br><br><hr><br><br>
 
 ### What's NIECE Profiles?
 <p>A NIECE profile is used to quickly build a NIECE site with some predefined settings, installed using git.</p>
