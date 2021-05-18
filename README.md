@@ -22,7 +22,7 @@
 git clone -b profiles https://github.com/BOXNYC/NIECE/
 ```
 
-### 2) Install and Run profile
+#### 2) Install and Run profile
  - Basic <br> _Bare-bones installation with the settings set to default. Usefull for quickly building and configuing a static site._ [Install basic profile](#basic)
  - _More coming soon..._
 
