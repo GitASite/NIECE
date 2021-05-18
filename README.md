@@ -6,7 +6,7 @@
   </a>
 </p>
 <h1 align="center">NIECE Profiles</h1>
-<p align="center"> This branch is for installation profiles.</p>
+<p align="center"> Quick-install Installation Profiles.</p>
 
 <br><br><p align="center">~ • **•** • ~</p><br><br>
 
