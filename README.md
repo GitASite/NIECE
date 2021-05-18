@@ -5,7 +5,7 @@
     <img src="https://niece.box.biz/images/niece/olive.svg" width="128" />
   </a>
 </p>
-<h3 align="center">NIECE Profiles</h3>
+<h1 align="center">NIECE Profiles</h1>
 <p align="center"> This branch is for installation profiles.</p>
 
 <br><br><p align="center">~ • **•** • ~</p><br><br>
