@@ -11,7 +11,7 @@
 <br><br>
 
 ### What's NIECE Profiles?
-<p>A NIECE profile is used to quickly build a NIECE site with some predefined settings.</p>
+<p>A NIECE profile is used to quickly build a NIECE site with some predefined settings, installed using git.</p>
 
 ### Profiles
  - <details><summary>Basic</summary>Bare-bones installation with the settings set to default. Usefull for quickly building and configuing a static site.</details>
