@@ -105,7 +105,6 @@ On your httpd.conf file add a VHOST that passes the traffic to your NIECE app's 
 <VirtualHost 104.130.24.68:80>
   ServerName niece.box.biz
   # Set up the proxy both ways
-  SSLProxyEngine On
   ProxyPass / http://localhost:4430/
   ProxyPassReverse / http://localhost:4430/
   ProxyPreserveHost On
